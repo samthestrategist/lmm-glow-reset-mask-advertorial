@@ -11,6 +11,20 @@
     <meta property="og:description" content="Honest review: FDA-cleared red light therapy mask that restores skin's cellular energy. 10 minutes, 3x per week. My husband noticed before I said a word." />
     <meta name="twitter:card" content="summary_large_image" />
 
+
+    <!-- GitHub Pages SPA redirect handler -->
+    <script>
+      (function(l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
     <!-- WeTracked Pixel -->
     <script async src="https://pixel.wetracked.io/orthocliner.myshopify.com/events.js"></script>
     <script async src="https://pixel.wetracked.io/ppt.js"></script>
